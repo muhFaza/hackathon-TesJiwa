@@ -1,0 +1,217 @@
+.displaynone {
+    display: none !important;
+}
+
+#homepage {
+    height: 100%;
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.homeCard {
+    color: rgb(0, 0, 0);
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.8);
+    /* opacity: 0.5; */
+    background-color: #fde2c546;
+    box-shadow: 3px 3px 10px;
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.active {
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+#welcome {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#inputName {
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    background-color: rgba(255, 255, 255, 0.393);
+}
+.inputRedBorder {
+    border: 1px solid red !important;
+    outline-color: none;
+}
+.invalidInput {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+#tac {
+    text-align: center;
+}
+
+#homeBtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+
+/* AVATAR STYLING */
+
+#avatarPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100vh; */
+    height: 100%;
+    border: 1px solid black;
+    background-image: url('bgs.png');
+    
+    position: relative;
+}
+
+
+#headerAvatar {
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+}
+
+#usernameAvatar {
+    font-size: 30px;
+    padding: 12px 15px;
+    color: azure;
+}
+
+#containerAvatar {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 250px;
+    /* background-color: rgb(166, 108, 220); */
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%)
+}
+
+#titleAvatar {
+    font-size: 50px;
+}
+
+.boxAvatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    /* border: 2px solid black; */
+    transform: scale(0.90);
+    transition: 0.3s ease;
+
+    color: rgb(224, 224, 224);
+    font-size: 18px;
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #ca1e0b, 0 0 7px #ca1e0b,
+    0 0 10px #ca1e0b, 0 0 20px #ca1e0b;
+    
+    backdrop-filter: blur(3px);
+
+    
+    /* background-color: rgba(255, 201, 201, 0.351); */
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 1px; */
+}
+.boxAvatar:hover {
+    /* background-color: rgba(0, 0, 0, 0.322); */
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #ca1e0b, 0 0 30px #ca1e0b,
+    0 0 40px #ca1e0b, 0 0 50px #ca1e0b;
+    -webkit-animation: blink 0.6s infinite alternate;
+    animation: blink 0.6s infinite alternate;
+    /* box-shadow: 5px 5px 10px rgb(255, 255, 255); */
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+@-webkit-keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #ff9d9d, 0 0 10px #ff9d9d, 0 0 20px #ff9d9d, 0 0 40px #ca1e0b,
+        0 0 70px #ca1e0b, 0 0 80px #ca1e0b;
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #ff9d9d, 0 0 10px #ff9d9d, 0 0 20px #ff9d9d, 0 0 40px #ca1e0b,
+        0 0 70px #ca1e0b, 0 0 80px #ca1e0b;
+    }
+  }
+  
+
+.imgAvatar {
+    width: 120px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(0, 0, 0, 0.522); */
+}
+
+
+/* Quiz Styling */
+#quizPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100vh; */
+    height: 100%;
+    border: 1px solid black;
+    background-image: url('bgs.png');
+    
+    position: relative;
+}
+
+#headerQuiz {
+    border: 1px solid black;
+    height: 100px;
+    width: 100%;
+}
+
+#containerQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 250px;
+    /* background-color: rgb(166, 108, 220); */
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border: 1px solid black;
+}
+
+#questionText {
+    font-size: 30px;
+    color: black;
+}
+
+#answerContainer {
+
+}
+
+.radio {
+    width: 15px;
+}

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async></script>
+    <title>Kemerdekaan</title>
+</head>
+<body>
+
+    <div id="homePage" class="displaynone">
+        <div id="homeCard" class="homeCard">
+            <h1 id="welcome" class="">Selamat datang</h1>
+            <div>
+                <label for="">Masukkan nama:</label>
+                <form action="" id="formHome">
+                    <input type="text" class="input is-small" id="inputName" autocomplete="off" required>
+            </div>
+                
+                <div id="tac">
+                    <input type="checkbox" id="checkboxHome">
+                    <label for="checkboxHome">I agree to the <a href="youtube.com" target="_blank">terms and conditions</a></label>
+                </div>
+                <!-- <p style="color: rgb(255, 0, 0); font-size: small; text-align: center;">nama tidak valid!</p> -->
+                <button id="homeBtn" class="button is-small">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="avatarPage" class="displaynone">
+        <div id="headerAvatar">
+            <div id="usernameAvatar">Diki</div>
+        </div>
+        <div id="titleAvatar">Choose your Avatar!</div>
+        <div id="containerAvatar">
+            <div class="boxAvatar">
+                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-wZahS9UBPLdcrZGBQTlzIpS5vdemEDyQ6yxX2plsUkcwHCR57_l4MdM0_b_AqbZKKSGOK1o6UKEvTSk0TRvjZYjvkg=w1358-h620" alt="" class="imgAvatar">
+                <p>Pangeran Antasari</p>
+                
+                <!-- https://lh3.googleusercontent.com/fife/AKsag4P3c1mm-g3FV4J4m8rMbBdtipypdL60BBme-NbzbHVkSubo-3rd5onSxYnd1JPy1NIdzXY-v7JftoQTr7RkD1iPSBt6u3sKmoB3eTxjmAT7mICVAZKvtM3W9NJtgFF57KlG399WzrZKJYy1h8VSXlptRI3uWDN6nJ-7VVFkkBjke8d6kv_x8yE2KUSftUoKg6L0lcWgRdLHrzKql4Q6FYamSKjYekB-6hD8uI6rVFUILQLAaL9VzqkXvL63pxgv45wjudKcCb4kxslbPXLhtmSPyKKtL3Gdz_xoTcsU6-e68OIofdT1s8DAWtLaz7vPY1wU-dlfz2Svyk6qGWXGZvZGFi3ex-cyPRbsSCrfBbAyhZ8X51Tp7MSI_Xl1tEaFMWxr7faelAkD_pGCGTYDS_e6ZwEuPhSVhsFg8b8nL-LKqpcKvz6ZD63DKd_OceRW41jXjapOzmtY0b3YiXzz3C5Djuw-gzNzhz5_VsCKganfsGRUs2zGPWDFGDGcCtX4XqkNz2wjL3zLmfqTbr6WFY4EG5SdqGZHXXeTBmSZiY6ulnnb_2qzkoR2lYiA70cwrB8Z0Gdd6GmpVkrF3aP6YV-I0AD4E-HKQrFVMHcg1lWs8fZ1a93Qvs7if71oEXoIpQ19Ow_3dc2n5BDRq5M4T7MU1glrUKUjXsQXajeO6lh9r6VA0cLJBvY1bFxWL6riwbSvkR9wD8iYYnuXUC_BXfVI6kGC6DnGZQbxz20OX5hF5fzayL5TTjgWuNFs_5Vac6iXjJbYD4C8pziRRV4W7rxmVMPvHyE9N9QpqJSICZb_wJNAvoY5ll9vQ-Ch0umgWhI_L95-YmOM_T7vb8u98RMVVX37VXmBBnP9iBd9jjnR3fu8O8DqBDSOZI9KxLofwIaDJqR0_ePTfx_jJArOGH-DICMQ9O9TBguKiwzjCDbxI6CCIOdNJhd0OYagtLtowTVOCN85fA=w1358-h620 -->
+            </div>
+            <div class="boxAvatar">
+                <img src="https://lh3.googleusercontent.com/fife/AKsag4M-RLHbmz4m4Ua98ROE8owuzYjqc8MWXd7zVkHXcqWH6m2P2mMnWzQuZPkbTHb_IDFh1tGbSYiipUvvwy0CcYs4UmduJk_ZYo5OAYH_EPAx9bacOUvAqv8Bddzl0MInW3r3EVGWdNgFAG8g_t4HjQEWJwDeKRZlel5j-AFqxsibPU8YAjNSwrPMXf3L295cMVj50arTUYOE-NIwNi6hQp6D9bOkQAqUKpVhYUoTu_GtLEazHCAwQCLgDDZG256QnImolfR8Yoc7IrQDM64xeN8xTGepMDXOvKwhvqZTn8S3msjzdGFEOanludAIW1KOrbLIeBULrt3xlb125F4k-Vd6h8jPtHNtldsjTnMTwavKsFx0_XPckYjKkmPwy3gwbn1jLLOAYFo1Judbw5nrY2GteV1aspzYk9zSRnmQ7XYk2mxPUqsAb6dgiSCRk3nUUkEZV_KZzDOkqRfX9vcf73XJ8Bue54BPqGYfG_EaLMgBTTU07pGTWUIlEttof6a3XhnV6MV3BQ8ayUGTsT9Yn5qifMziTBlgWcz-xxjGljNKt_omXwdbr7xRo_-GGFFUJuxvDar9spYI0LGmrWOgh9Jz5P6cin1TlXA1Wq4K3oQwLyshwE1-TAjXEpNau9ii420BKusQVf_LvYZpPwpZtrp-H8aR2YrvSUMNyXBQeespzB_YSM70RtxS0BRfnjQhuvRxtTFP565i5y1XccJ-eHWhoZsgoVfyYSExH5r52cckBTX7prcoIeUys38pCP9Nnj4FIRKxvltk8WBULI1zdlFGRJ6FfRQoyR1w6FWYINVonujqiIdK8BSV3wPBDmM86EnZVCfMxNDwq7c44ZZkyjZoVsjvw1h2oy3jcmEYO6ppDyYDCAnE0zEZz7UvI6QXYGP6rqcWv21b1CK5Y0vsL2CGYcwtaLy1HwXLtN5z9Ru4Jsr9psbJzHikR3zVt64huipsiOtdfA=w1358-h620" alt="" class="imgAvatar">
+                <p>Pattimura</p>
+            </div>
+            <div class="boxAvatar">
+                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-zpCoZx75j5IML2EnCj2-XgtCvaQw4GMw8AIB0jbBK9uU5WdHfGgwSeE218l9BO0fes6favY9234C-i0jiCPD8MYbk3=w1358-h620" alt="" class="imgAvatar">
+                <p>Raden Ajeng Kartini</p>
+            </div>
+            <div class="boxAvatar">
+                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-wX2qChli8O9kx7bXX9hUAz1ztTbQ1h06nP2W4XAyjPwtwtK9gXw-Z-fQQUBwnwBYZJzRwf4hWJbrd1FHDLQg00p6cQxQ=w927-h620" alt="" class="imgAvatar">
+                <p>Teuku Umar</p>
+            </div>
+            <div class="boxAvatar">
+                <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-wcBpzsIU8ls15-LZiRgsfvuhM2fM8-lOKD_ZUhUspYtBdkoOKBt8IJVSDahma9auiUSrDk8FpC9vt4OojUKtEYaj_qMg=w1358-h620" alt="" class="imgAvatar">
+                <p>Pangeran Diponegoro</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="quizPage" class="">
+        <div id="headerQuiz">
+            <div>Tes Jiwa Kemerdekaan</div>
+        </div>
+        <div id="containerQuiz">
+            <h1 id="questionText">Lorem ipsum dolor sit amet.</h1>
+            <div id="answerContainer">
+                <input type="radio" class="radio">
+                <input type="radio" class="radio">
+                <input type="radio" class="radio">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
