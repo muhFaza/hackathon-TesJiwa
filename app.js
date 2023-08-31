@@ -4,9 +4,13 @@ const formHome = document.querySelector('#formHome')
 const checkboxHome = document.querySelector('#checkboxHome')
 const homePage = document.querySelector('#homePage')
 const homeCard = document.querySelector('.homeCard')
-
+const slide = document.querySelector('#slide')
+const containerAvatar = document.querySelector('#containerAvatar')
+// 
+const avatarPage = document.querySelector('#avatarPage')
 setTimeout(() => {
     homeCard.classList.add('active')
+    // homePage.classList.add('active')
 }, 300);
 
 let username = '';
@@ -27,7 +31,19 @@ formHome.addEventListener('submit', function (e) {
     if ( isUsernameValid(inputName.value) && checkboxHome.checked === true) {
         username = inputName.value
         // todo animation swipe
-        homePage.classList.add('displaynone')
+        // setTimeout(() => {
+        //     avatarPage.classList.add('active')
+        // }, 300);
+        homeCard.classList.remove('active')
+        setTimeout(() => {
+            // slide.classList.add('active')
+            avatarPage.classList.remove('displaynone')
+            avatarPage.classList.add('active')
+            containerAvatar.classList.add('active')
+            // homePage.classList.add('displaynone')
+            
+        }, 500);
+        
     }
     // kalo nama invalid
     else if ( !isUsernameValid(inputName.value) ) {
@@ -35,7 +51,7 @@ formHome.addEventListener('submit', function (e) {
         newElement.innerText = 'nama tidak valid!'
         newElement.classList.add('invalidInput')
         newElement.setAttribute('id', 'invalidInput')
-        formHome.insertBefore(newElement, homeBtn)
+        homeCard.insertBefore(newElement, homeBtn)
         inputName.classList.add('inputRedBorder')
     }
     // kalo belum cek agreement
@@ -44,7 +60,7 @@ formHome.addEventListener('submit', function (e) {
         newElement.innerText = 'Acc dulu dongs'
         newElement.classList.add('invalidInput')
         newElement.setAttribute('id', 'invalidInput')
-        formHome.insertBefore(newElement, homeBtn)
+        homeCard.insertBefore(newElement, homeBtn)
     }
 })
 

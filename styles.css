@@ -1,3 +1,11 @@
+body {
+    /* background-image: url('https://i.imgur.com/acyJQWZ.png'); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
 .displaynone {
     display: none !important;
 }
@@ -21,6 +29,8 @@
     /* opacity: 0.5; */
     background-color: #fde2c546;
     box-shadow: 3px 3px 10px;
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #ca1e0b, 0 0 7px #ca1e0b,
+    0 0 10px #ca1e0b, 0 0 20px #ca1e0b;
     padding: 20px;
     border: 0px white solid;
     border-radius: 10px;
@@ -28,7 +38,7 @@
     opacity: 0;
     transition: 0.5s ease;
 }
-.active {
+.homeCard.active {
     transform: translate(-50%,-50%) scale(1);
     opacity: 1;
 }
@@ -39,10 +49,17 @@
     margin-bottom: 25px;
 }
 
+#alignInput {
+    /* transform: translate(10%, 0%); */
+    margin: 0 auto;
+    width: 80%;
+}
+
 #inputName {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 8px auto;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.393);
 }
 .inputRedBorder {
@@ -77,9 +94,21 @@
     /* width: 100vh; */
     height: 100%;
     border: 1px solid black;
-    background-image: url('bgs.png');
-    
-    position: relative;
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: -100vw;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+#avatarPage.active{
+    left: 0;
+    opacity: 1 !important;
 }
 
 
@@ -118,8 +147,9 @@
     align-items: center;
     width: 15%;
     /* border: 2px solid black; */
-    transform: scale(0.90);
+    transform: scale(0.70);
     transition: 0.3s ease;
+    opacity: 0;
 
     color: rgb(224, 224, 224);
     font-size: 18px;
@@ -132,6 +162,10 @@
     /* background-color: rgba(255, 201, 201, 0.351); */
     border-radius: 5px;
     /* box-shadow: 1px 1px 1px; */
+}
+#containerAvatar.active .boxAvatar{
+    transform: scale(0.9);
+    opacity: 1;
 }
 .boxAvatar:hover {
     /* background-color: rgba(0, 0, 0, 0.322); */
@@ -176,7 +210,7 @@
     /* width: 100vh; */
     height: 100%;
     border: 1px solid black;
-    background-image: url('bgs.png');
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
     
     position: relative;
 }
@@ -214,4 +248,20 @@
 
 .radio {
     width: 15px;
+}
+
+#slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #97190b00;
+    /* z-index: 2; */
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s ease;
+}
+#slide.active {
+    left: 0;
 }
